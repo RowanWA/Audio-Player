@@ -9,6 +9,8 @@ const playPauseButton = document.getElementById("play");
 
 const progressSlider = document.getElementById("progress-slider");
 
+const volumeSlider = document.getElementById("volume-slider")
+
 audioPlayer.src = "audio/HYËNA [ ezmp3.cc ].mp3";
 
 let playing = false;
@@ -44,10 +46,14 @@ function onEnd() {
     playing = false;
 }
 
+function onVolumeSliderChange() {
+    audioPlayer.volume = (volumeSlider.value) * 0.01;
+}
+
 playPauseButton.onclick = onPlayPauseClick;
 audioPlayer.onloadedmetadata = onLoadedMetadata;
 audioPlayer.ontimeupdate = onTimeUpdate;
 audioPlayer.onended = onEnd;
-
+volumeSlider.onchange = onVolumeSliderChange;
 
 
