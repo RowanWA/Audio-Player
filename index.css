@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-style: dashed; */
+    /* border-width: 5px; */
+    /* border-color: black; */
+    width: 100vw;
+    height: 100vh;
+    background-color: #048886;
+    /* color: white; */
+    }
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-style: dashed; */
+    /* border-width: 5px; */
+    /* border-color: black; */
+    width: auto;
+    height: 300px;
+    background-color: #02c5c1;
+    /* color: white; */
+    margin-top: 10vh;
+    }
