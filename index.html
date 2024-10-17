@@ -20,7 +20,7 @@
             My Audio Player!
         </h1>
         <div class="audio-container">
-            <p class="menu-container">
+            <p class="title-container">
                 <span id="song-name">
                     No&nbsp;
                 </span>
@@ -32,7 +32,8 @@
                 </span>
             </p>
             <div class="menu-container">
-                <div class="row-container">
+                <div class="vol-row-container">
+                    <button type="button" id="volume-button"> <img class="button-img" src="images/volume.png"> </button>
                     <input id="volume-slider" class="constrain-input" type="range" min="0" max="100">
                 </div>
                 <div class="row-container">
@@ -52,10 +53,20 @@
                 </div>
             </div>
             <div class="bar-container">
-                <p>
-                    <!-- 00:00/00:00 -->
-                </p>
-                <input type="range" id="progress-slider">
+                <!-- <p> -->
+                    <span id="progress-text">
+                        00:00
+                    </span>
+                    <span>
+                        /
+                    </span>
+                    <span id="duration-text">
+                        00:00
+                    </span>
+                <!-- </p> -->
+                <!-- <p> -->
+                    <input type="range" id="progress-slider">
+                <!-- </p> -->
             </div>
         </div>
     </div>
