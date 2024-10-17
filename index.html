@@ -1,28 +1,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 
-  <!-- style file -->
-  <link rel="stylesheet" href="index.css" />
+    <!-- style file -->
+    <link rel="stylesheet" href="index.css" />
 
 
-  <title>
+    <title>
 
-  </title>
+    </title>
 
-  <body>
+<body>
     <div class="flex-container">
         <h1>
             My Audio Player!
         </h1>
         <div class="audio-container">
-            Test
+            <p class="menu-container">
+                <span>
+                    No&nbsp;
+                </span>
+                <span>
+                    Song&nbsp;
+                </span>
+                <span>
+                    Selected&nbsp;
+                </span>
+            </p>
+            <div class="menu-container">
+                <div class="row-container">
+                    <input class="constrain-input" type="range" min="0" max="100">
+                </div>
+                <div class="row-container">
+                    <span>
+                        <button type="button" id="play"> <img class="button-img" src="images/play.png"> </button>
+                    </span>
+                    <span>
+                        <button type="button" id="previous"> <img class="button-img" src="images/previous.png">
+                        </button>
+                    </span>
+                    <span>
+                        <button type="button" id="next"> <img class="button-img" src="images/next.png"> </button>
+                    </span>
+                </div>
+                <div>
+                    <img id="album-cover-fmt" src="images/Hyenas-Img.jpg">
+                </div>
+            </div>
+            <div class="menu-container">
+                <p>
+                    00:00/00:00
+                </p>
+                <input type="range" id="progress-slider">
+            </div>
         </div>
     </div>
 
 
-  </body>
+</body>
