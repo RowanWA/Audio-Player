@@ -3,7 +3,7 @@ const By = document.getElementById("by");
 const ArtistName = document.getElementById("artist-name");
 const AlbumPhoto = document.getElementById("album-cover-fmt");
 
-const SongList = ["Hyëna&nbsp","Neurodivergent&nbsp", "Torpedeos&nbsp"];
+const SongList = ["Hyëna&nbsp", "Neurodivergent&nbsp", "Torpedeos&nbsp"];
 const ArtistList = ["KMFDM", "Rabbit Junk", "MDFMK"];
 const SourceList = ["audio/HYËNA.mp3", "audio/Neurodivergent.mp3", "audio/Torpedoes.mp3"];
 const CoverList = ["images/Hyenas.jpg", "images/Neurodivergent.jpg", "images/Torpedoes.jpeg"];
@@ -23,12 +23,14 @@ const durationText = document.getElementById("duration-text");
 audioPlayer.src = SourceList[playlistPosition];
 audioPlayer.volume = 0.5;
 
+progressSlider.value = 0;
+
 let playing = false;
 let updatingProgress = false;
 
 function onPreviousClick() {
     playlistPosition = playlistPosition - 1;
-    
+
     // resets counter once array has reached limit
     if (playlistPosition > 2) {
         playlistPosition = 0;
@@ -66,7 +68,7 @@ function onNextClick() {
 
 
 function onPlayPauseClick() {
-    if(playing) {
+    if (playing) {
         audioPlayer.pause();
         playPauseButton.innerHTML = '<img class="button-img" src="images/play.png">';
         playing = false;
@@ -92,12 +94,12 @@ function secondsToMMSS(seconds) {
     if (MM < 10) MM = "0" + MM;
 
     let SS = integerSeconds % 60;
-    if (SS <10) SS = "0" + SS;
+    if (SS < 10) SS = "0" + SS;
     return MM + ":" + SS;
 }
 
 function onTimeUpdate() {
-    if(!updatingProgress) {
+    if (!updatingProgress) {
         progressSlider.value = audioPlayer.currentTime;
     }
     progressText.innerHTML = secondsToMMSS(audioPlayer.currentTime);
@@ -121,7 +123,7 @@ function onEnd() {
     playing = true;
     progressText.innerHTML = "00:00";
     audioPlayer.play();
-    
+
 }
 
 function onVolumeSliderChange() {
