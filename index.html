@@ -1,10 +1,13 @@
 <html lang="en">
 
+<script src="script.js" defer></script>
+<script src="draggable.js" defer></script>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="script.js" defer></script>
+
 
     <!-- style file -->
     <link rel="stylesheet" href="index.css" />
@@ -15,45 +18,47 @@
     </title>
 
 <body>
-    <div class="flex-container">
-        <h1>
-            My Audio Player!
-        </h1>
-        <div class="audio-container">
-            <p class="title-container">
-                <span id="song-name">
-                    No&nbsp;
-                </span>
-                <span id="by">
-                    Song&nbsp;
-                </span>
-                <span id="artist-name">
-                    Selected&nbsp;
-                </span>
-            </p>
-            <div class="menu-container">
-                <div class="vol-row-container">
-                    <button type="button" id="volume-button"> <img class="button-img" src="images/volume.png"> </button>
-                    <input id="volume-slider" class="constrain-input" type="range" min="0" max="100">
-                </div>
-                <div class="row-container">
-                    <span>
-                        <button type="button" id="play"> <img class="button-img" src="images/play.png"> </button>
+    <div id="body-container">
+        <div id="flex-container" draggable="true">
+            <h1>
+                My Audio Player!
+            </h1>
+            <div class="audio-container" draggable="true">
+                <p class="title-container" draggable="true">
+                    <span id="song-name" draggable="true">
+                        No&nbsp;
                     </span>
-                    <span>
-                        <button type="button" id="previous"> <img class="button-img" src="images/previous.png">
+                    <span id="by" draggable="true">
+                        Song&nbsp;
+                    </span>
+                    <span id="artist-name" draggable="true">
+                        Selected&nbsp;
+                    </span>
+                </p>
+                <div class="menu-container" draggable="true">
+                    <div class="vol-row-container" draggable="true">
+                        <button type="button" id="volume-button"> <img class="button-img" src="images/volume.png">
                         </button>
-                    </span>
-                    <span>
-                        <button type="button" id="next"> <img class="button-img" src="images/next.png"> </button>
-                    </span>
+                        <input id="volume-slider" class="constrain-input" type="range" min="0" max="100">
+                    </div>
+                    <div class="row-container" draggable="true">
+                        <span>
+                            <button type="button" id="play"> <img class="button-img" src="images/play.png"> </button>
+                        </span>
+                        <span>
+                            <button type="button" id="previous"> <img class="button-img" src="images/previous.png">
+                            </button>
+                        </span>
+                        <span>
+                            <button type="button" id="next"> <img class="button-img" src="images/next.png"> </button>
+                        </span>
+                    </div>
+                    <div>
+                        <img id="album-cover-fmt" src="images/albumDefault.png" draggable="true">
+                    </div>
                 </div>
-                <div>
-                    <img id="album-cover-fmt" src="images/albumDefault.png">
-                </div>
-            </div>
-            <div class="bar-container">
-                <!-- <p> -->
+                <div class="bar-container" draggable="true">
+                    <!-- <p> -->
                     <span id="progress-text">
                         00:00
                     </span>
@@ -63,13 +68,13 @@
                     <span id="duration-text">
                         00:00
                     </span>
-                <!-- </p> -->
-                <!-- <p> -->
+                    <!-- </p> -->
+                    <!-- <p> -->
                     <input type="range" id="progress-slider">
-                <!-- </p> -->
+                    <!-- </p> -->
+                </div>
             </div>
         </div>
+
     </div>
-
-
 </body>
