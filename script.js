@@ -128,6 +128,7 @@ function onEnd() {
 
 function onVolumeSliderChange() {
     audioPlayer.volume = (volumeSlider.value) * 0.01;
+    draggable = false;
 }
 
 function onProgressMouseDown() {
@@ -137,6 +138,7 @@ function onProgressMouseDown() {
 function onProgressSliderChange() {
     audioPlayer.currentTime = progressSlider.value;
     updatingProgress = false;
+    draggable = false;
 }
 
 previousButton.onclick = onPreviousClick;
