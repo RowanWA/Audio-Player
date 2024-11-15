@@ -31,7 +31,7 @@ let updatingProgress = false;
 function onPreviousClick() {
     playlistPosition = playlistPosition - 1;
 
-    // resets counter once array has reached limit
+
     if (playlistPosition > 2) {
         playlistPosition = 0;
     } else if (playlistPosition < 0) {
@@ -50,7 +50,7 @@ function onPreviousClick() {
 
 function onNextClick() {
     playlistPosition = playlistPosition + 1;
-    // resets counter once array has reached limit
+
     if (playlistPosition > 2) {
         playlistPosition = 0;
     } else if (playlistPosition < 0) {
@@ -108,7 +108,7 @@ function onTimeUpdate() {
 function onEnd() {
     progressSlider.value = 0;
     playlistPosition = playlistPosition + 1;
-    // resets counter once array has reached limit
+
     if (playlistPosition > 2) {
         playlistPosition = 0;
     } else if (playlistPosition < 0) {
