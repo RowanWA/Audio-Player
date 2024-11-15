@@ -9,13 +9,9 @@ body {
     justify-content: center;
     align-items: top;
     flex-wrap: wrap;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     width: 300px;
     height: 275px;
     background-color: #02c5c1;
-    /* color: white; */
     margin-top: 10px;
 }
 
@@ -25,14 +21,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     width: 250px;
     height: auto;
-    /* background-color: #02c5c1; */
-    /* color: white; */
-    /* margin-top: 10vh; */
 }
 
 .title-container {
@@ -41,9 +31,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     background-color: #006362;
     color: white;
     font-weight: bold;
@@ -58,9 +45,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     width: 250px;
     height: 75px;
 
@@ -72,9 +56,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     width: 75px;
     height: auto;
 }
@@ -85,9 +66,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     width: 75px;
     height: 54px;
 }
@@ -99,9 +77,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     width: 250px;
     height: 30px;
 }
@@ -161,16 +136,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
-    /* width: 100vw; */
-    /* height: 100vh; */
     width: 350px;
     height: 400px;
     position: absolute;
     background-color: #048886;
-    /* color: white; */
 }
 
 #body-container {
@@ -178,15 +147,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border-style: dashed; */
-    /* border-width: 5px; */
-    /* border-color: black; */
     width: 100vw;
     height: 100vh;
-    /* width: 350px; */
-    /* height: 400px; */
     position: relative;
     background-color: rgba(0, 0, 0, 0);
-    /* color: white; */
 }
 
