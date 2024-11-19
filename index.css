@@ -1,18 +1,25 @@
 body {
+    /* setting overall background color */
     background-color: #001a19;
 }
 
 
 .audio-container {
+    /* setting flex display */
     display: flex;
+    /* setting the direction of the flex to be horizontal */
     flex-direction: row;
+    /* centering content to middle of the page */
     justify-content: center;
+    /* setting content to be at top of the container */
     align-items: top;
+    /* allowing for wrapping of the flex box */
     flex-wrap: wrap;
+    /* defining size of the audio container */
     width: 300px;
-    height: 275px;
+    height: 300px;
+    /* setting container colour */
     background-color: #02c5c1;
-    margin-top: 10px;
 }
 
 .player-container {
@@ -36,7 +43,7 @@ body {
     font-weight: bold;
     font-size: 150%;
     width: 250px;
-    height: auto;
+    height: 80px;
 }
 
 .menu-container {
@@ -134,7 +141,7 @@ body {
 #flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     width: 350px;
     height: 400px;
@@ -151,5 +158,6 @@ body {
     height: 100vh;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
 }
 

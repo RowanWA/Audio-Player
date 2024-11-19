@@ -1,55 +1,72 @@
 <html lang="en">
 
-<script src="script.js" defer></script>
-<script src="draggable.js" defer></script>
+<!-- linking java script files -->
+<script src="js/script.js" defer></script>
+<script src="js/draggable.js" defer></script>
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking stylesheet -->
     <link rel="stylesheet" href="index.css" />
     <title>
     </title>
 
 <body>
+    <!-- creating overall container for audio player -->
     <div id="body-container">
+        <!-- creating flex container that can be dragged around -->
         <div id="flex-container" draggable="true">
             <h1>
                 My Audio Player!
             </h1>
+            <!-- creating flex container to contain the elements of the player -->
             <div class="audio-container" draggable="true">
+                <!-- creating container for the song title and artist -->
                 <p class="title-container" draggable="true">
+                    <!-- creating span with filler that can be later filled with the song title -->
                     <span id="song-name" draggable="true">
                         No&nbsp;
                     </span>
+                    <!--  -->
                     <span id="by" draggable="true">
                         Song&nbsp;
                     </span>
+                    <!-- creating span with filler that can be later filled with the artist name -->
                     <span id="artist-name" draggable="true">
                         Selected&nbsp;
                     </span>
                 </p>
+                <!-- creating container for the menu with controls for the audio player -->
                 <div class="menu-container" draggable="true">
                     <div class="vol-row-container" draggable="true">
+                        <!-- creating button without function to display image for audio slider under it -->
                         <button type="button" id="volume-button"> <img class="button-img" src="images/volume.png">
                         </button>
+                        <!-- creating slider for volume control -->
                         <input id="volume-slider" class="constrain-input" type="range" min="0" max="100">
                     </div>
                     <div class="row-container" draggable="true">
                         <span>
+                            <!-- creating play pause button -->
                             <button type="button" id="play"> <img class="button-img" src="images/play.png"> </button>
                         </span>
                         <span>
+                            <!-- creating button to select previous track -->
                             <button type="button" id="previous"> <img class="button-img" src="images/previous.png">
                             </button>
                         </span>
                         <span>
+                            <!-- creating button to select next track -->
                             <button type="button" id="next"> <img class="button-img" src="images/next.png"> </button>
                         </span>
                     </div>
                     <div>
+                        <!-- creating filler for album cover that will be replaced with the song album cover -->
                         <img id="album-cover-fmt" src="images/albumDefault.png" draggable="true">
                     </div>
                 </div>
+                <!-- creating container to store song time and slider for song time -->
                 <div class="bar-container" draggable="true">
                     <span id="progress-text">
                         00:00
@@ -60,7 +77,7 @@
                     <span id="duration-text">
                         00:00
                     </span>
-                    <input type="range" id="progress-slider">
+                    <input type="range" id="progress-slider" >
                 </div>
             </div>
         </div>
